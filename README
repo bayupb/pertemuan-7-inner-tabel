@@ -84,7 +84,7 @@
     <div class="container mt-5">
         <div class="row">
             <table class="table table-light table-sm table-bordered table-striped">
-                <h4>Table Menampilakn data mahasiswa dari tabel pelanggan beserta proses penginputannya</h4>
+                <h4>Table Inner Join</h4>
                 <thead>
                     <tr>
                         <th>Nim Mhs</th>
@@ -106,7 +106,7 @@
                         <td><?php echo $row['nim_mhs']?></td>
                         <td><?php echo $row['nama_mhs']?></td>
                         <td><?php echo $row['jumlah_buku']?></td>
-                        <td><?php echo $row['timestamp']?></td>
+                        <td><?php echo date('d-m-y : H:i:s', strtotime($row['timestamp']))?></td>
                     </tr>
                 </tbody>
                 <?php
@@ -118,40 +118,48 @@
 
     <div class="container mt-5">
         <div class="row">
-            <table class="table table-light table-sm table-bordered table-striped">
-                <h4>Table Menampilkan data mahasiswa dari tabel pelanggan beserta proses penginputannya</h4>
+            <table class="table table-light table-sm table-bordered table-striped table-responsive-lg">
+                <h4>Table Left Join</h4>
                 <thead>
-                    <tr>
+                    <tr class="text-center">
                         <th>Nim Mhs</th>
                         <th>Nama Mhs</th>
                         <th>Kode Buku</th>
-                        <th>Jumlah Buku</th>
+                        <th>Jumlah Pinjam Buku</th>
+                        <th>Alamat</th>
                         <th>Tanggal Proses</th>
                     </tr>
                 </thead>
                 <?php
                 include 'koneksi.php';
-                $sql = ' SELECT ms.nim_mhs, kode_buku, nama_mhs, jumlah_buku, timestamp
+                $sql = ' SELECT ms.nim_mhs, kode_buku, nama_mhs, jumlah_buku, alamat, timestamp
                 FROM mahasiswa ms
                 LEFT JOIN proses ps USING(nim_mhs)';
                 $query = mysqli_query($tersambung, $sql);
                 while ($row = mysqli_fetch_array($query)){
+
+                    
                 ?>
                 <tbody>
-                    <tr>
+                    <tr class="text-center">
                         <td><?php echo $row['nim_mhs']?></td>
                         <td><?php echo $row['nama_mhs']?></td>
                         <td><?php echo $row['kode_buku']?></td>
                         <td><?php echo $row['jumlah_buku']?></td>
-                        <td><?php echo $row['timestamp']?></td>
+                        <td><?php echo $row['alamat']?></td>
+                        <td><?php echo date('d-m-y : H:i:s', strtotime($row['timestamp']))?></td>
                     </tr>
                 </tbody>
                 <?php
+
+                
         }
         ?>
             </table>
         </div>
     </div>
+
+
 
 
 
