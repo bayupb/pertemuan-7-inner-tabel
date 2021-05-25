@@ -84,7 +84,7 @@
     <div class="container mt-5">
         <div class="row">
             <table class="table table-light table-sm table-bordered table-striped">
-                <h4>Table Menampilakn data mahasiswa dari tabel pelanggan beserta proses penginputannya</h4>
+                <h4>Table Inner Join</h4>
                 <thead>
                     <tr>
                         <th>Nim Mhs</th>
@@ -119,7 +119,7 @@
     <div class="container mt-5">
         <div class="row">
             <table class="table table-light table-sm table-bordered table-striped table-responsive-lg">
-                <h4>Table Menampilkan data mahasiswa dari tabel pelanggan beserta proses penginputannya</h4>
+                <h4>Table Left Join</h4>
                 <thead>
                     <tr class="text-center">
                         <th>Nim Mhs</th>
