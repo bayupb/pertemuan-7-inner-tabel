@@ -1,3 +1,7 @@
-<img width="948" alt="Screen index php 1" src="https://user-images.githubusercontent.com/83670094/119464042-9347b580-bd6c-11eb-85d3-014cf4f95729.PNG">
-<img width="939" alt="Screen index php 2" src="https://user-images.githubusercontent.com/83670094/119464054-95aa0f80-bd6c-11eb-9a5a-ac872b13aea0.PNG">
-# pertemuan-7-inner-tabel
+#Hasil Output Program yang sudah di buat.
+#contoh code lengkap ada pada readme
+#disini hasil gambar
+
+
+<img width="938" alt="Hasil 2" src="https://user-images.githubusercontent.com/83670094/119465442-dd7d6680-bd6d-11eb-842c-8f572f9f838c.PNG">
+<img width="903" alt="Hasil 1" src="https://user-images.githubusercontent.com/83670094/119465451-dfdfc080-bd6d-11eb-916d-b33dd699206d.PNG">
